@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://zhardd.github.io/fitness-site",
+  "homepage": "https://zhardd.github.io/fitness-site",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
