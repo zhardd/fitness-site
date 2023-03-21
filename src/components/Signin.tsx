@@ -11,11 +11,11 @@ const Signin = () => {
         <form>
             <div className='flex flex-col py-2'>
                 <label className='py-2 font-medium'>Sähköposti</label>
-                <input className='border p-3' type='email'></input>
+                <input className='border p-3 text-black' type='email'></input>
             </div>
             <div className='flex flex-col py-2'>
                 <label className='py-2 font-medium'>Salasana</label>
-                <input className='border p-3' type='password'></input>
+                <input className='border p-3 text-black' type='password'></input>
             </div>
             <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded'>Kirjaudu sisään</button>
         </form>
