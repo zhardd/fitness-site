@@ -4,7 +4,6 @@ import { Route, Routes } from 'react-router-dom';
 import Account from './components/Account';
 import Signup from './components/Signup';
 import Signin from './components/Signin';
-import { AuthProvider } from './context/AuthContext';
 
 const App = () => {
   return (
@@ -14,7 +13,7 @@ const App = () => {
        </h1>
 
        <Routes>
-          <Route path='/fitness-site/' element={<Signup/>} />
+          <Route path='/fitness-site/' element={<Signin/>} />
           <Route path='/fitness-site/signup' element={<Signup/>} />
           <Route path='/fitness-site/signin' element={<Signin/>} />   
       </Routes> 
