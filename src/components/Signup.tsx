@@ -6,14 +6,14 @@ const Signup = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
-    const {signup} = useAuth()
+    // const {signup} = useAuth()
 
 
     const handleSubmit = async (e: any) => {
         e.preventDefault()
         setError('')
         try {
-            await signup(email, password)
+            // await signup(email, password)
         } catch (e: any) {
             setError(e.message)
             console.log(e.message)

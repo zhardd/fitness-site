@@ -12,13 +12,13 @@ const App = () => {
        <h1 className='text-center text-3xl font-bold'>
         Tili
        </h1>
-       <AuthProvider>
+
        <Routes>
           <Route path='/fitness-site/' element={<Account/>} />
           <Route path='/fitness-site/signup' element={<Signup/>} />
           <Route path='/fitness-site/signin' element={<Signin/>} />   
       </Routes> 
-       </AuthProvider>
+
     </div>
     // <div className="bg-primary w-full overflow-hidden">
     //   <div className={`${styles.paddingX} ${styles.flexCenter}`}>
