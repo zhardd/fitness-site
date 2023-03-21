@@ -9,16 +9,26 @@ import { AuthProvider } from './context/AuthContext';
 const App = () => {
   return (
     <div>
-       <h1 className='text-center text-3xl font-bold'>
-        Tili
-       </h1>
-       <AuthProvider>
+       <div className="bg-primary w-full overflow-hidden">
+       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+           <Navbar />
+        </div>
+      </div>
+    </div>
+       <div className={`bg-primary ${styles.flexStart}`}>
+         <div className={`${styles.boxWidth}`}>
+         <AuthProvider>
         <Routes>
-            <Route path='/fitness-site/' element={<Signup/>} />
+        <Route path='/fitness-site/' element={<Hero/>} />
+            <Route path='/fitness-site/account' element={<Account/>} />
             <Route path='/fitness-site/signup' element={<Signup/>} />
             <Route path='/fitness-site/signin' element={<Signin/>} />   
         </Routes> 
       </AuthProvider>
+         </div>
+       </div>
+
 
 
     </div>

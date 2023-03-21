@@ -4,10 +4,12 @@ export const navLinks = [
   {
     id: "login",
     title: "Kirjaudu",
+    to: '/fitness-site/signin'
   },
   {
     id: "Register",
     title: "Rekisteröidy",
+    to: '/fitness-site/signup'
   }
 ];
 

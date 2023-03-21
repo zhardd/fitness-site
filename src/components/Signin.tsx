@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Signin = () => {
   return (
-    <div className='max-w-[700px] mx-auto my-16 p-4'>
+    <div className='max-w-[700px] mx-auto my-16 p-4 text-white'>
         <div>
             <h1 className='text-2xl font-bold py-2'>Kirjaudu sisään</h1>
             <p className='py-2'>Eikö sinulla ole tiliä? <Link to='/fitness-site/signup' className='underline'> Rekisteröidy täältä.</Link></p>

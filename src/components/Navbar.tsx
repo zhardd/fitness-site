@@ -3,20 +3,21 @@ import logo from '../assets/logo.svg';
 import menu from '../assets/menu.svg';
 import close from '../assets/close.svg';
 import { navLinks } from '../constants';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 const [toggle, setToggle] = useState(false);
   
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
-      <img className='w-[160px] h-[64px]' src={logo} alt='nuuttiks'/>
+      <Link to='/fitness-site/'>
+        <img className='w-[160px] h-[64px]' src={logo} alt='nuuttiks'/>
+      </Link>
 
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav, index) => (
           <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}>
-            <a href={`#${nav.id}`}>
-              {nav.title}
-            </a>
+            <Link to={nav.to} >{nav.title}</Link>
           </li>
           ))}
       </ul>
