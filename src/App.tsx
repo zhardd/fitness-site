@@ -14,7 +14,7 @@ const App = () => {
        </h1>
 
        <Routes>
-          <Route path='/fitness-site/' element={<Signin/>} />
+          <Route path='/fitness-site/' element={<Signup/>} />
           <Route path='/fitness-site/signup' element={<Signup/>} />
           <Route path='/fitness-site/signin' element={<Signin/>} />   
       </Routes> 
